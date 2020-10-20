@@ -51,4 +51,32 @@ public class DFS_targetN {
 		
 		
 	}
+	
+	// version 2 
+    public static int cnt2 = 0; 
+    public int solution2(int[] numbers, int target) {
+        
+        int answer = 0;
+        int first = numbers[0];
+        
+        dfs2(numbers,1,target,-(first));
+        dfs2(numbers,1,target,first);
+        answer = cnt;
+        return answer;
+    }
+    
+    public static void dfs2(int[] numbers,int depth,int target,int num) {
+        
+        if(depth == numbers.length) {
+            
+            if(num == target) {
+                cnt2++;
+            }
+            
+            return;
+        }
+        
+        dfs(numbers,depth+1,target,num+numbers[depth]);
+        dfs(numbers,depth+1,target,num-numbers[depth]);
+    }
 }
