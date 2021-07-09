@@ -6,7 +6,10 @@ import java.util.Queue;
 
 /**
  * @date : 2021-07-09
+ * @author : Gilho Lee
  * solution : BFS
+ * addr : https://leetcode.com/problems/open-the-lock/
+ * difficulty : Medium
  */
 public class leet752 {
 
