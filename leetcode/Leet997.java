@@ -1,5 +1,11 @@
 package leetcode;
-
+/**
+ * @date : 2021-07-09
+ * @author : Gilho Lee
+ * solution : BFS
+ * addr : https://leetcode.com/problems/open-the-lock/
+ * difficulty : Medium
+ */
 import java.util.HashSet;
 
 public class Leet997 {
