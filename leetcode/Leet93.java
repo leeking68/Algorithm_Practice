@@ -1,9 +1,27 @@
 package leetcode;
 
+/**
+ * @date : 2021-07-20
+ * @author : Gilho Lee
+ * solution : Backtraking
+ * addr : https://leetcode.com/problems/restore-ip-addresses/submissions/
+ * difficulty : Medium
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Leet93 {
+
+    public static void main(String[] args) {
+
+        Leet93 leet = new Leet93();
+
+        String s = "25525511135";
+
+        System.out.println(leet.restoreIpAddresses(s));
+
+    }
 
     public List<String> restoreIpAddresses(String s) {
 
@@ -27,8 +45,7 @@ public class Leet93 {
 
                     String thirdAddr = s.substring(i+j,i+j+k);
                     String lastAddr = s.substring(i+j+k);
-
-                    if(!checkIpAddr(thirdAddr)||!!checkIpAddr(lastAddr)) continue;
+                    if(!checkIpAddr(thirdAddr)||!checkIpAddr(lastAddr)) continue;
 
                     ans.add(firtstAddr+"."+secondAddr+"."+thirdAddr+"."+lastAddr);
 
