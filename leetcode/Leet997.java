@@ -1,10 +1,10 @@
 package leetcode;
 /**
- * @date : 2021-07-09
+ * @date : 2021-07-19
  * @author : Gilho Lee
- * solution : BFS
- * addr : https://leetcode.com/problems/open-the-lock/
- * difficulty : Medium
+ * solution : Simulation
+ * addr : https://leetcode.com/problems/find-the-town-judge/submissions/
+ * difficulty : Easy
  */
 import java.util.HashSet;
 
