@@ -10,7 +10,7 @@ package acmicpc;
 
 import java.util.Scanner;
 
-
+ 
 public class DP_1149 {
 
     public static int n;
