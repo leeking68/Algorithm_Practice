@@ -10,7 +10,7 @@ package acmicpc;
 
 import java.util.Scanner;
 
- 
+
 public class DP_1149 {
 
     public static int n;
@@ -45,8 +45,6 @@ public class DP_1149 {
         }
 
         return Math.min(Math.min(dp[n][0],dp[n][1]),dp[n][2]);
-
-
 
     }
 
